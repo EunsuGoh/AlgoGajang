@@ -27,3 +27,10 @@ __파일저장예시__ : part02 그리디의 큰 수의 법칙 푸는 경우에�
 레포에 컨트리뷰터로 등록된 분들 다 pull request에 등록된 리퀘스트들을 master 브랜치로 머지가 가능합니다!
 </br>(본인이 리퀘스트하고 본인이 머지도 .. 가능.. 😉)
 </br>정상적으로 요청된 풀 리퀘스트는 짬날때 머지 해주시면 감사하겠습니다 (_ _)
+
+#### +++ 추가
+본인 브랜치에서 git push 할 때 remote rejected 가 뜬다면!
+1. git checkout master
+2. git pull origin master
+3. git checkout 본인 브랜치
+4. git push origin 본인 브랜치
