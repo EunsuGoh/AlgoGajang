@@ -66,7 +66,7 @@ console.log('예제 2 ===>>' + time(3)) // 8325
 */
 function knight(location) {
     let rowColumn = [location[0].charCodeAt() - 96, Number(location[1])]
-    
+
     let steps = [[-2,-1],[-1,-2],[1,-2],[2,-1],[2,1],[1,2],[-1,2],[-2,1]]
     let result = 0;
     for(let i = 0; i < steps.length; i++){

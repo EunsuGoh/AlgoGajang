@@ -10,7 +10,7 @@ function maze(n, m, board) {
     let dy = [0, 0, -1, 1];
     let queue = [];
 
-    queue.push([0, 0]); // 큐에 처음 시작 넣어주고
+    queue.push([0, 0]); // 큐에 처음 시작 위치를 넣어주고
     while (queue.length) { // 큐에 뭐가 있을때
         let x = queue.shift() // 큐 지워주고
         for (let k = 0; k < 4; k++) { // 방향을 도는데
