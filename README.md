@@ -22,6 +22,8 @@ __파일저장예시__ : part02 그리디의 큰 수의 법칙 푸는 경우에�
 2. 본인 브랜치에서 git merge origin master (마스터 브랜치 내용이 본인 브랜치로 병합됩니다.)
 3. 본인 브랜치에서 작업 후 똑같이 add, commit, push, pull request 하시면 됩니다.
 
+#### 📔 커밋 메시지가 어려운 분.. (참고하면 좋은 내용..!)
+1. https://meetup.toast.com/posts/106 <좋은 git 커밋 메시지를 작성하기 위한 7가지 약속>
 
 #### ++ 추가
 레포에 컨트리뷰터로 등록된 분들 다 pull request에 등록된 리퀘스트들을 master 브랜치로 머지가 가능합니다!
