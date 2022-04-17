@@ -29,6 +29,9 @@ function swapElem(arr1, arr2, K) {
   // 배열 합산 리턴
   return arrA.reduce((a, c) => a + c);
 }
+
+//Quick sort 함수
+// 파이썬 레퍼 코드와 동일
 function quickSort_INC(arr, start, end) {
   if (start >= end) {
     return arr;
