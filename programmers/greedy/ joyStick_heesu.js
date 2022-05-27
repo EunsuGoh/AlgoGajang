@@ -6,13 +6,18 @@ function solution(name, count = 0, A=65, Z=90) {
     }
     //[ 74, 69, 82, 79, 69, 78 ] [ 74, 65, 78 ]
 
-    // 조작 횟수의 최솟값 구한다 = Z인 경우 A -> Z로 바로가서 조작횟수는 +1이다.
+    // 상하 이동의 최솟값 구한다 = Z인 경우 A -> Z로 바로가서 조작횟수는 +1이다.
+    let upDown = [];
     for(let i=0; i<name.length; i++){
-        if(Math.abs(A-charCode[i]) !== 0){
-            console.log(name[i], Math.abs(A-charCode[i]), Math.abs(Z-charCode[i]+1))
-            count += Math.min(Math.abs(A-charCode[i]),Math.abs(Z-charCode[i]+1));
+        if(charCode[i] === 65) upDown.push(0);
+        else {
+            upDown.push(Math.min(Math.abs(A-charCode[i]),Math.abs(Z-charCode[i]+1)));
         }
-        if(i+1 !== name.length && charCode[i+1] !== A) count +=1;
     }
+    // [ 9, 4, 9, 12, 4, 13 ] [ 9, 0, 13 ]
+    console.log(upDown);
+    // 좌우 이동의 최솟값
+    let leftRight = [];
+
     return count;
 }
