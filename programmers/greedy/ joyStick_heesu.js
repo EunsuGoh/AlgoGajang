@@ -1,6 +1,6 @@
-function solution(name, count = 0, A=65, Z=90) {
+function solution(name, count = 0) {
     // 각 알파벳을 아스키코드로 변환해 배열에 담기 A=65 J=74 Z=90
-    let charCode = [];
+    let charCode = [], A=65, Z=90;
     for(let i=0; i<name.length; i++){
         charCode.push(name.charCodeAt(i))
     }
@@ -15,9 +15,13 @@ function solution(name, count = 0, A=65, Z=90) {
         }
     }
     // [ 9, 4, 9, 12, 4, 13 ] [ 9, 0, 13 ]
-    console.log(upDown);
+
     // 좌우 이동의 최솟값
     let leftRight = [];
+    leftRight.push(name.length-1);
 
+
+    // count = 상하 이동 배열의 합 + 좌우 이동 최솟값
+    count = upDown.reduce((a,b)=>a+b) + Math.min(leftRight);
     return count;
 }
